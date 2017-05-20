@@ -49,7 +49,7 @@ function continueAfterSevenDiamondsPlay(gameState, turnp) {
     for (let k = 0; k < amountOfPlayers; k++) {
         if (gameState.players[k].cardsHolding.length === 0) {
             if (k === 0) {
-                console.log(`You don't have any cards left!  He wins!`)
+                console.log(`You don't have any cards left!  You win!`)
             } else {
                 console.log(`Player ${k+1} doesn't have any cards left!  He wins!`)
             }

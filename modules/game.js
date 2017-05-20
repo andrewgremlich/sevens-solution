@@ -22,6 +22,9 @@ function main(promptResults) {
             /*Sort cards to the players*/
             .then(dealCards)
 
+            /*Catch the error if there is an odd number of players*/
+            .catch(reason => console.log('reason is! ',reason))
+
             /*Play all thecards out*/
             .then(playgame)
     }
