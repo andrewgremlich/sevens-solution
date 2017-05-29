@@ -1,6 +1,7 @@
 const dealCards = require('./dealCards.js'),
     spawnPlayers = require('./spawnPlayers.js'),
-    playgame = require('./playgame.js')
+    playgame = require('./playgame.js'),
+    summary = require('./summary.js')
 
 function main(promptResults) {
     /*Prompt results contains players and games as a string*/
@@ -10,6 +11,8 @@ function main(promptResults) {
     for (let i = 0; i < numifiedGames; i++) {
 
         let gameState = {
+            howManyGamesToPlay: numifiedGames,
+            gamesMainPlayerWon: 0,
             cardsPlayed: 0,
             playedCards: [],
             players: [],
