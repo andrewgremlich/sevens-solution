@@ -22,6 +22,7 @@ function whoHasFewerCards(arr, gameState) {
 
     if (gameState.howManyGamesToPlay === gamesPlayed) {
         console.log((gamesMainPlayerWon / gamesPlayed) * 100 + '%')
+        console.timeEnd("Time of Execution:")
     }
 }
 
@@ -60,6 +61,7 @@ function continueAfterSevenDiamondsPlay(gameState, turnp) {
 
             if (gameState.howManyGamesToPlay === gamesPlayed) {
                 console.log((gamesMainPlayerWon/gamesPlayed) * 100 + '%')
+                console.timeEnd("Time of Execution:")
             }
             return
         }
@@ -97,7 +99,6 @@ function playgame(gameState) {
     playerWithSevDiamonds.cardsHolding.splice(sevDiamondsLocInHand, 1)
 
     continueAfterSevenDiamondsPlay(gameState, playerNumWithSevDiamonds)
-
 }
 
 module.exports = playgame

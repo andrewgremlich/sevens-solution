@@ -6,6 +6,8 @@ const dealCards = require('./dealCards.js'),
 function main(promptResults) {
     /*Prompt results contains players and games as a string*/
 
+    console.time("Time of Execution:")
+
     let numifiedGames = +promptResults.games
 
     for (let i = 0; i < numifiedGames; i++) {
